@@ -21,6 +21,7 @@ public class CategoryController {
 
     @GetMapping("/all")
     public ResponseEntity<ApiResponse> getAllCategories() {
+        // no se puede 
         try {
             List<Category> categories = categoryService.getAllCategories();
             return ResponseEntity.ok(new ApiResponse("found!", categories));
